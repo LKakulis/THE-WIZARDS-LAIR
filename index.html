@@ -14,18 +14,18 @@
 <!-- MAGICAL OBJECTS AND ITEMS -->
 <div class="object-group">
 
-    <a class="object-univ object1" href=""> </a> </div>
-    <a class="object-univ object2" href=""> </a> </div>
-    <a class="object-univ object3" href=""> </a> </div>
-    <a class="object-univ object4" href=""> </a> </div>
-    <a class="object-univ object5" href=""> </a> </div>
-    <a class="object-univ object6" href=""> </a> </div>
-    <a class="object-univ object7" href=""> </a> </div>
-    <a class="object-univ object8" href=""> </a> </div>
-    <a class="object-univ object9" href=""> </a> </div>
-     <div class="object-univ object10"> </div>
-     <div class="object-univ object11"> </div>
-     <div class="object-univ object12"> </div>
+    <div class="object-univ object1"> </div>
+    <div class="object-univ object2"> </div>
+    <div class="object-univ object3"> </div>
+    <div class="object-univ object4"> </div>
+    <div class="object-univ object5"> </div>
+    <div class="object-univ object6"> </div>
+    <div class="object-univ object7"> </div>
+    <div class="object-univ object8"> </div>
+    <div class="object-univ object9"> </div>
+    <div class="object-univ object10"> </div>
+    <div class="object-univ object11"> </div>
+    <div class="object-univ object12"> </div>
      <a class="object-univ object13" href=""> </a> </div>
      <a class="object-univ object14" href=""> </a> </div>
      <a class="object-univ object15" href=""> </a> </div>
@@ -52,25 +52,19 @@
 
 
 <script>
-    // Get the audio element and the button element
 const audio = document.getElementById('testaudio');
 const audioButton = document.getElementsByClassName('object11')[0];
 
-// Add event listener for the 'mousedown' event
 audioButton.addEventListener('mousedown', function(){
-    // Play the audio when the mouse button is pressed down
     audio.play();
 });
 
-// Add event listener for the 'mouseup' event
 audioButton.addEventListener("mouseup", function() {
-    // Pause the audio when the mouse button is released
     audio.pause();
-    // Optional: Reset the playback to the start (0 seconds) 
-    // so it starts from the beginning each time the button is held
+
     audio.currentTime = 0; 
 });
-
 </script>
+
 </body>
 </html>
