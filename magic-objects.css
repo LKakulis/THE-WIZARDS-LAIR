@@ -1,8 +1,10 @@
-.object-univ{background-color:blueviolet; height: 60px; width: 60px;}
-
+.object-univ{background-color:blueviolet; height: 60px; width: 60px; transition: all 300ms;}
+.object-univ:hover{height: 70px; width: 70px; transform: translate(-5px, -5px);}
 object-group{display:flex; flex-direction: row; position:absolute; flex-wrap: wrap;}
 
-.object1{position:absolute; top:10%; left: 10%}
+
+
+.object1{position:absolute; top:10%; left: 10%;}
 .object2{position:absolute; top:10% ; left:18% ;}
 .object3{position:absolute; top:10% ; left:26% ;}
 .object4{position:absolute; top:10% ; left:34% ;}
@@ -12,6 +14,7 @@ object-group{display:flex; flex-direction: row; position:absolute; flex-wrap: wr
 .object8{position:absolute; top:30% ; left:26% ;}
 .object9{position:absolute; top:30% ; left:34% ;}
 .object10{position:absolute; top:30% ; left:42% ;}
+.object10:active{}
 .object11{position:absolute; top:50% ; left:10% ;}
 .object12{position:absolute; top:50% ; left:18% ;}
 .object13{position:absolute; top:50% ; left:26% ;}

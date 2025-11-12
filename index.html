@@ -6,6 +6,7 @@
     <title>Warmup - 11/5</title>
     <link href="frank-the-great.css" rel="stylesheet" type="text/css">
     <link href="magic-objects.css" rel="stylesheet" type="text/css">
+    <link href="interactive.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -13,39 +14,63 @@
 <!-- MAGICAL OBJECTS AND ITEMS -->
 <div class="object-group">
 
-    <div class="object-univ object1"> <a href=""> </a> </div>
-    <div class="object-univ object2"> <a href=""> </a> </div>
-    <div class="object-univ object3"> <a href=""> </a> </div>
-    <div class="object-univ object4"> <a href=""> </a> </div>
-    <div class="object-univ object5"> <a href=""> </a> </div>
-    <div class="object-univ object6"> <a href=""> </a> </div>
-    <div class="object-univ object7"> <a href=""> </a> </div>
-    <div class="object-univ object8"> <a href=""> </a> </div>
-    <div class="object-univ object9"> <a href=""> </a> </div>
-    <div class="object-univ object10"> <a href=""> </a> </div>
-    <div class="object-univ object11"> <a href=""> </a> </div>
-    <div class="object-univ object12"> <a href=""> </a> </div>
-    <div class="object-univ object13"> <a href=""> </a> </div>
-    <div class="object-univ object14"> <a href=""> </a> </div>
-    <div class="object-univ object15"> <a href=""> </a> </div>
-    <div class="object-univ object16"> <a href=""> </a> </div>
-    <div class="object-univ object17"> <a href=""> </a> </div>
-    <div class="object-univ object18"> <a href=""> </a> </div>
-    <div class="object-univ object19"> <a href=""> </a> </div>
-    <div class="object-univ object20"> <a href=""> </a> </div>
+    <a class="object-univ object1" href=""> </a> </div>
+    <a class="object-univ object2" href=""> </a> </div>
+    <a class="object-univ object3" href=""> </a> </div>
+    <a class="object-univ object4" href=""> </a> </div>
+    <a class="object-univ object5" href=""> </a> </div>
+    <a class="object-univ object6" href=""> </a> </div>
+    <a class="object-univ object7" href=""> </a> </div>
+    <a class="object-univ object8" href=""> </a> </div>
+    <a class="object-univ object9" href=""> </a> </div>
+     <div class="object-univ object10"> </div>
+     <div class="object-univ object11"> </div>
+     <div class="object-univ object12"> </div>
+     <a class="object-univ object13" href=""> </a> </div>
+     <a class="object-univ object14" href=""> </a> </div>
+     <a class="object-univ object15" href=""> </a> </div>
+     <a class="object-univ object16" href=""> </a> </div>
+     <a class="object-univ object17" href=""> </a> </div>
+     <a class="object-univ object18" href=""> </a> </div>
+     <a class="object-univ object19" href=""> </a> </div>
+     <a class="object-univ object20" href=""> </a> </div>
 
 </div>
 
 
 <!-- FRANK THE GREAT WIZARD!!!! -->
 <div class="wizard-norm"> </div>
+<div class="text-bubble-univ"> <p>Text Bubble 1</p> </div>
 
 
 <!-- other elements -->
 <div class="about-page-button"> <a href=""></a>?</div>
 
+<audio id="testaudio" src="./assets/testaudio.mp3" preload="auto"></audio>
 
 
+
+
+<script>
+    // Get the audio element and the button element
+const audio = document.getElementById('testaudio');
+const audioButton = document.getElementsByClassName('object11')[0];
+
+// Add event listener for the 'mousedown' event
+audioButton.addEventListener('mousedown', function(){
+    // Play the audio when the mouse button is pressed down
+    audio.play();
+});
+
+// Add event listener for the 'mouseup' event
+audioButton.addEventListener("mouseup", function() {
+    // Pause the audio when the mouse button is released
+    audio.pause();
+    // Optional: Reset the playback to the start (0 seconds) 
+    // so it starts from the beginning each time the button is held
+    audio.currentTime = 0; 
+});
+
+</script>
 </body>
-
 </html>
