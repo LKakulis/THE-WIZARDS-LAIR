@@ -1,0 +1,24 @@
+.object-univ{background-color:blueviolet; height: 60px; width: 60px;}
+
+object-group{display:flex; flex-direction: row; position:absolute; flex-wrap: wrap;}
+
+.object1{position:absolute; top:10%; left: 10%}
+.object2{position:absolute; top:10% ; left:18% ;}
+.object3{position:absolute; top:10% ; left:26% ;}
+.object4{position:absolute; top:10% ; left:34% ;}
+.object5{position:absolute; top:10% ; left:42% ;}
+.object6{position:absolute; top:30% ; left:10% ;}
+.object7{position:absolute; top:30% ; left:18% ;}
+.object8{position:absolute; top:30% ; left:26% ;}
+.object9{position:absolute; top:30% ; left:34% ;}
+.object10{position:absolute; top:30% ; left:42% ;}
+.object11{position:absolute; top:50% ; left:10% ;}
+.object12{position:absolute; top:50% ; left:18% ;}
+.object13{position:absolute; top:50% ; left:26% ;}
+.object14{position:absolute; top:50% ; left:34% ;}
+.object15{position:absolute; top:50% ; left:42% ;}
+.object16{position:absolute; top:70% ; left:10% ;}
+.object17{position:absolute; top:70% ; left:18% ;}
+.object18{position:absolute; top:70% ; left:26% ;}
+.object19{position:absolute; top:70% ; left:34% ;}
+.object20{position:absolute; top:70% ; left:42% ;}
