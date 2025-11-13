@@ -1,3 +1,23 @@
-.text-bubble-univ{display:none; position: absolute; width: 50px; height: 50px; right: 50%; top: 20%}
-body:has(.object10:active) .text-bubble-univ {display: block;}
+.text-bubble-univ{display:none; position: absolute; right: 15%; top: 20%}
+
+body:has(.object1:active) .text1 {display: block;}
+body:has(.object2:active) .text2 {display: block;}
+body:has(.object3:active) .text3 {display: block;}
+body:has(.object4:active) .text4 {display: block;}
+body:has(.object5:active) .text5 {display: block;}
+body:has(.object6:active) .text6 {display: block;}
+body:has(.object7:active) .text7 {display: block;}
+body:has(.object8:active) .text8 {display: block;}
+body:has(.object9:active) .text9 {display: block;}
+body:has(.object10:active) .text10 {display: block;}
+body:has(.object11:active) .text11 {display: block;}
+body:has(.object12:active) .text12 {display: block;}
+body:has(.object13:active) .text13 {display: block;}
+body:has(.object14:active) .text14 {display: block;}
+body:has(.object15:active) .text15 {display: block;}
+body:has(.object16:active) .text16 {display: block;}
+body:has(.object17:active) .text17 {display: block;}
+body:has(.object18:active) .text18 {display: block;}
+body:has(.object19:active) .text19 {display: block;}
+body:has(.object20:active) .text20 {display: block;}
 
