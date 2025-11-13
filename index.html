@@ -13,7 +13,6 @@
 
 <!-- MAGICAL OBJECTS AND ITEMS -->
 <div>
-
     <div class="object-univ object1"> </div>
     <div class="object-univ object2"> </div>
     <div class="object-univ object3"> </div>
@@ -34,364 +33,364 @@
     <div class="object-univ object18"> </div>
     <div class="object-univ object19"> </div>
     <div class="object-univ object20"> </div>
-
 </div>
 
 
 <!-- FRANK THE GREAT WIZARD!!!! -->
 <div class="wizard-norm"> </div>
 
-<div class="text-bubble-univ text1"><p>object1</p></div>
-<div class="text-bubble-univ text2"><p>object2</p></div>
-<div class="text-bubble-univ text3"><p>object3</p></div>
-<div class="text-bubble-univ text4"><p>object4</p></div>
-<div class="text-bubble-univ text5"><p>object5</p></div>
-<div class="text-bubble-univ text6"><p>object6</p></div>
-<div class="text-bubble-univ text7"><p>object7</p></div>
-<div class="text-bubble-univ text8"><p>object8</p></div>
-<div class="text-bubble-univ text9"><p>object9</p></div>
-<div class="text-bubble-univ text10"><p>object10</p></div>
-<div class="text-bubble-univ text11"><p>object11</p></div>
-<div class="text-bubble-univ text12"><p>object12</p></div>
-<div class="text-bubble-univ text13"><p>object13</p></div>
-<div class="text-bubble-univ text14"><p>object14</p></div>
-<div class="text-bubble-univ text15"><p>object15</p></div>
-<div class="text-bubble-univ text16"><p>object16</p></div>
-<div class="text-bubble-univ text17"><p>object17</p></div>
-<div class="text-bubble-univ text18"><p>object18</p></div>
-<div class="text-bubble-univ text19"><p>object19</p></div>
-<div class="text-bubble-univ text20"><p>object20</p></div>
-
+    <!-- text bubbles --><div>
+        <div class="text-bubble-univ text1"><p>object1</p></div>
+        <div class="text-bubble-univ text2"><p>object2</p></div>
+        <div class="text-bubble-univ text3"><p>object3</p></div>
+        <div class="text-bubble-univ text4"><p>object4</p></div>
+        <div class="text-bubble-univ text5"><p>object5</p></div>
+        <div class="text-bubble-univ text6"><p>object6</p></div>
+        <div class="text-bubble-univ text7"><p>object7</p></div>
+        <div class="text-bubble-univ text8"><p>object8</p></div>
+        <div class="text-bubble-univ text9"><p>object9</p></div>
+        <div class="text-bubble-univ text10"><p>object10</p></div>
+        <div class="text-bubble-univ text11"><p>object11</p></div>
+        <div class="text-bubble-univ text12"><p>object12</p></div>
+        <div class="text-bubble-univ text13"><p>object13</p></div>
+        <div class="text-bubble-univ text14"><p>object14</p></div>
+        <div class="text-bubble-univ text15"><p>object15</p></div>
+        <div class="text-bubble-univ text16"><p>object16</p></div>
+        <div class="text-bubble-univ text17"><p>object17</p></div>
+        <div class="text-bubble-univ text18"><p>object18</p></div>
+        <div class="text-bubble-univ text19"><p>object19</p></div>
+        <div class="text-bubble-univ text20"><p>object20</p></div>
+    </div>
 
 <!-- other elements -->
-<div class="about-page-button"> <a href=""></a>?</div>
-
-<!-- audio --><div>
-    <audio id="testobject1" src="./assets/testaudio/testobject1.mp3" preload="auto"></audio>
-    <audio id="testobject2" src="./assets/testaudio/testobject2.mp3" preload="auto"></audio>
-    <audio id="testobject3" src="./assets/testaudio/testobject3.mp3" preload="auto"></audio>
-    <audio id="testobject4" src="./assets/testaudio/testobject4.mp3" preload="auto"></audio>
-    <audio id="testobject5" src="./assets/testaudio/testobject5.mp3" preload="auto"></audio>
-    <audio id="testobject6" src="./assets/testaudio/testobject6.mp3" preload="auto"></audio>
-    <audio id="testobject7" src="./assets/testaudio/testobject7.mp3" preload="auto"></audio>
-    <audio id="testobject8" src="./assets/testaudio/testobject8.mp3" preload="auto"></audio>
-    <audio id="testobject9" src="./assets/testaudio/testobject9.mp3" preload="auto"></audio>
-    <audio id="testobject10" src="./assets/testaudio/testobject10.mp3" preload="auto"></audio>
-    <audio id="testobject11" src="./assets/testaudio/testobject11.mp3" preload="auto"></audio>
-    <audio id="testobject12" src="./assets/testaudio/testobject12.mp3" preload="auto"></audio>
-    <audio id="testobject13" src="./assets/testaudio/testobject13.mp3" preload="auto"></audio>
-    <audio id="testobject14" src="./assets/testaudio/testobject14.mp3" preload="auto"></audio>
-    <audio id="testobject15" src="./assets/testaudio/testobject15.mp3" preload="auto"></audio>
-    <audio id="testobject16" src="./assets/testaudio/testobject16.mp3" preload="auto"></audio>
-    <audio id="testobject17" src="./assets/testaudio/testobject17.mp3" preload="auto"></audio>
-    <audio id="testobject18" src="./assets/testaudio/testobject18.mp3" preload="auto"></audio>
-    <audio id="testobject19" src="./assets/testaudio/testobject19.mp3" preload="auto"></audio>
-    <audio id="testobject20" src="./assets/testaudio/testobject20.mp3" preload="auto"></audio>
-</div>
-
-
-<!-- scripts --> <div>
-<script>
-const audio = document.getElementById('testobject1');
-const audioButton = document.getElementsByClassName('object1')[0];
-
-
-audioButton.addEventListener('mousedown', function(){
-    audio.play();
-});
-
-audioButton.addEventListener("mouseup", function() {
-    audio.pause();
-
-    audio.currentTime = 0; 
-});
-</script>
-
-<script>
-const audio2 = document.getElementById('testobject2');
-const audioButton2 = document.getElementsByClassName('object2')[0];
-
-audioButton2.addEventListener('mousedown', function(){
-    audio2.play();
-});
-
-audioButton2.addEventListener("mouseup", function() {
-    audio2.pause();
-
-    audio2.currentTime = 0; 
-});
-</script>
-
-<script>
-const audio3 = document.getElementById('testobject3');
-const audioButton3 = document.getElementsByClassName('object3')[0];
-
-audioButton3.addEventListener('mousedown', function(){
-    audio3.play();
-});
-
-audioButton3.addEventListener("mouseup", function() {
-    audio3.pause();
-
-    audio3.currentTime = 0; 
-});
-</script>
-
-<script>
-const audio4 = document.getElementById('testobject4');
-const audioButton4 = document.getElementsByClassName('object4')[0];
-
-audioButton4.addEventListener('mousedown', function(){
-    audio4.play();
-});
-
-audioButton4.addEventListener("mouseup", function() {
-    audio4.pause();
-
-    audio4.currentTime = 0; 
-});
-</script>
-
-<script>
-const audio5 = document.getElementById('testobject5');
-const audioButton5 = document.getElementsByClassName('object5')[0];
-
-audioButton5.addEventListener('mousedown', function(){
-    audio5.play();
-});
-
-audioButton5.addEventListener("mouseup", function() {
-    audio5.pause();
-
-    audio5.currentTime = 0; 
-});
-</script>
+<a href="about-page.html" class="about-page-button">?</a>
+
+    <!-- audio --><div>
+        <audio id="testobject1" src="./assets/testaudio/testobject1.mp3" preload="auto"></audio>
+        <audio id="testobject2" src="./assets/testaudio/testobject2.mp3" preload="auto"></audio>
+        <audio id="testobject3" src="./assets/testaudio/testobject3.mp3" preload="auto"></audio>
+        <audio id="testobject4" src="./assets/testaudio/testobject4.mp3" preload="auto"></audio>
+        <audio id="testobject5" src="./assets/testaudio/testobject5.mp3" preload="auto"></audio>
+        <audio id="testobject6" src="./assets/testaudio/testobject6.mp3" preload="auto"></audio>
+        <audio id="testobject7" src="./assets/testaudio/testobject7.mp3" preload="auto"></audio>
+        <audio id="testobject8" src="./assets/testaudio/testobject8.mp3" preload="auto"></audio>
+        <audio id="testobject9" src="./assets/testaudio/testobject9.mp3" preload="auto"></audio>
+        <audio id="testobject10" src="./assets/testaudio/testobject10.mp3" preload="auto"></audio>
+        <audio id="testobject11" src="./assets/testaudio/testobject11.mp3" preload="auto"></audio>
+        <audio id="testobject12" src="./assets/testaudio/testobject12.mp3" preload="auto"></audio>
+        <audio id="testobject13" src="./assets/testaudio/testobject13.mp3" preload="auto"></audio>
+        <audio id="testobject14" src="./assets/testaudio/testobject14.mp3" preload="auto"></audio>
+        <audio id="testobject15" src="./assets/testaudio/testobject15.mp3" preload="auto"></audio>
+        <audio id="testobject16" src="./assets/testaudio/testobject16.mp3" preload="auto"></audio>
+        <audio id="testobject17" src="./assets/testaudio/testobject17.mp3" preload="auto"></audio>
+        <audio id="testobject18" src="./assets/testaudio/testobject18.mp3" preload="auto"></audio>
+        <audio id="testobject19" src="./assets/testaudio/testobject19.mp3" preload="auto"></audio>
+        <audio id="testobject20" src="./assets/testaudio/testobject20.mp3" preload="auto"></audio>
+    </div>
+
+
+    <!-- scripts --> <div>
+    <script>
+    const audio = document.getElementById('testobject1');
+    const audioButton = document.getElementsByClassName('object1')[0];
+
+
+    audioButton.addEventListener('mousedown', function(){
+        audio.play();
+    });
+
+    audioButton.addEventListener("mouseup", function() {
+        audio.pause();
+
+        audio.currentTime = 0; 
+    });
+    </script>
+
+    <script>
+    const audio2 = document.getElementById('testobject2');
+    const audioButton2 = document.getElementsByClassName('object2')[0];
+
+    audioButton2.addEventListener('mousedown', function(){
+        audio2.play();
+    });
+
+    audioButton2.addEventListener("mouseup", function() {
+        audio2.pause();
+
+        audio2.currentTime = 0; 
+    });
+    </script>
+
+    <script>
+    const audio3 = document.getElementById('testobject3');
+    const audioButton3 = document.getElementsByClassName('object3')[0];
+
+    audioButton3.addEventListener('mousedown', function(){
+        audio3.play();
+    });
+
+    audioButton3.addEventListener("mouseup", function() {
+        audio3.pause();
+
+        audio3.currentTime = 0; 
+    });
+    </script>
+
+    <script>
+    const audio4 = document.getElementById('testobject4');
+    const audioButton4 = document.getElementsByClassName('object4')[0];
+
+    audioButton4.addEventListener('mousedown', function(){
+        audio4.play();
+    });
+
+    audioButton4.addEventListener("mouseup", function() {
+        audio4.pause();
+
+        audio4.currentTime = 0; 
+    });
+    </script>
+
+    <script>
+    const audio5 = document.getElementById('testobject5');
+    const audioButton5 = document.getElementsByClassName('object5')[0];
+
+    audioButton5.addEventListener('mousedown', function(){
+        audio5.play();
+    });
+
+    audioButton5.addEventListener("mouseup", function() {
+        audio5.pause();
+
+        audio5.currentTime = 0; 
+    });
+    </script>
 
-<script>
-const audio6 = document.getElementById('testobject6');
-const audioButton6 = document.getElementsByClassName('object6')[0];
+    <script>
+    const audio6 = document.getElementById('testobject6');
+    const audioButton6 = document.getElementsByClassName('object6')[0];
 
-audioButton6.addEventListener('mousedown', function(){
-    audio6.play();
-});
+    audioButton6.addEventListener('mousedown', function(){
+        audio6.play();
+    });
 
-audioButton6.addEventListener("mouseup", function() {
-    audio6.pause();
+    audioButton6.addEventListener("mouseup", function() {
+        audio6.pause();
 
-    audio6.currentTime = 0; 
-});
-</script>
+        audio6.currentTime = 0; 
+    });
+    </script>
 
-<script>
-const audio7 = document.getElementById('testobject7');
-const audioButton7 = document.getElementsByClassName('object7')[0];
+    <script>
+    const audio7 = document.getElementById('testobject7');
+    const audioButton7 = document.getElementsByClassName('object7')[0];
 
-audioButton7.addEventListener('mousedown', function(){
-    audio7.play();
-});
+    audioButton7.addEventListener('mousedown', function(){
+        audio7.play();
+    });
 
-audioButton7.addEventListener("mouseup", function() {
-    audio7.pause();
+    audioButton7.addEventListener("mouseup", function() {
+        audio7.pause();
 
-    audio7.currentTime = 0; 
-});
-</script>
+        audio7.currentTime = 0; 
+    });
+    </script>
 
-<script>
-const audio8 = document.getElementById('testobject8');
-const audioButton8 = document.getElementsByClassName('object8')[0];
+    <script>
+    const audio8 = document.getElementById('testobject8');
+    const audioButton8 = document.getElementsByClassName('object8')[0];
 
-audioButton8.addEventListener('mousedown', function(){
-    audio8.play();
-});
+    audioButton8.addEventListener('mousedown', function(){
+        audio8.play();
+    });
 
-audioButton8.addEventListener("mouseup", function() {
-    audio8.pause();
+    audioButton8.addEventListener("mouseup", function() {
+        audio8.pause();
 
-    audio8.currentTime = 0; 
-});
-</script>
+        audio8.currentTime = 0; 
+    });
+    </script>
 
-<script>
-const audio9 = document.getElementById('testobject9');
-const audioButton9 = document.getElementsByClassName('object9')[0];
+    <script>
+    const audio9 = document.getElementById('testobject9');
+    const audioButton9 = document.getElementsByClassName('object9')[0];
 
-audioButton9.addEventListener('mousedown', function(){
-    audio9.play();
-});
+    audioButton9.addEventListener('mousedown', function(){
+        audio9.play();
+    });
 
-audioButton9.addEventListener("mouseup", function() {
-    audio9.pause();
+    audioButton9.addEventListener("mouseup", function() {
+        audio9.pause();
 
-    audio9.currentTime = 0; 
-});
-</script>
+        audio9.currentTime = 0; 
+    });
+    </script>
 
-<script>
-const audio10 = document.getElementById('testobject10');
-const audioButton10 = document.getElementsByClassName('object10')[0];
+    <script>
+    const audio10 = document.getElementById('testobject10');
+    const audioButton10 = document.getElementsByClassName('object10')[0];
 
-audioButton10.addEventListener('mousedown', function(){
-    audio10.play();
-});
+    audioButton10.addEventListener('mousedown', function(){
+        audio10.play();
+    });
 
-audioButton10.addEventListener("mouseup", function() {
-    audio10.pause();
+    audioButton10.addEventListener("mouseup", function() {
+        audio10.pause();
 
-    audio10.currentTime = 0; 
-});
-</script>
+        audio10.currentTime = 0; 
+    });
+    </script>
 
-<script>
-const audio11 = document.getElementById('testobject11');
-const audioButton11 = document.getElementsByClassName('object11')[0];
+    <script>
+    const audio11 = document.getElementById('testobject11');
+    const audioButton11 = document.getElementsByClassName('object11')[0];
 
-audioButton11.addEventListener('mousedown', function(){
-    audio11.play();
-});
+    audioButton11.addEventListener('mousedown', function(){
+        audio11.play();
+    });
 
-audioButton11.addEventListener("mouseup", function() {
-    audio11.pause();
+    audioButton11.addEventListener("mouseup", function() {
+        audio11.pause();
 
-    audio11.currentTime = 0; 
-});
-</script>
+        audio11.currentTime = 0; 
+    });
+    </script>
 
-<script>
-const audio12 = document.getElementById('testobject12');
-const audioButton12 = document.getElementsByClassName('object12')[0];
+    <script>
+    const audio12 = document.getElementById('testobject12');
+    const audioButton12 = document.getElementsByClassName('object12')[0];
 
-audioButton12.addEventListener('mousedown', function(){
-    audio12.play();
-});
+    audioButton12.addEventListener('mousedown', function(){
+        audio12.play();
+    });
 
-audioButton12.addEventListener("mouseup", function() {
-    audio12.pause();
+    audioButton12.addEventListener("mouseup", function() {
+        audio12.pause();
 
-    audio12.currentTime = 0; 
-});
-</script>
+        audio12.currentTime = 0; 
+    });
+    </script>
 
-<script>
-const audio13 = document.getElementById('testobject13');
-const audioButton13 = document.getElementsByClassName('object13')[0];
+    <script>
+    const audio13 = document.getElementById('testobject13');
+    const audioButton13 = document.getElementsByClassName('object13')[0];
 
-audioButton13.addEventListener('mousedown', function(){
-    audio13.play();
-});
+    audioButton13.addEventListener('mousedown', function(){
+        audio13.play();
+    });
 
-audioButton13.addEventListener("mouseup", function() {
-    audio13.pause();
+    audioButton13.addEventListener("mouseup", function() {
+        audio13.pause();
 
-    audio13.currentTime = 0; 
-});
-</script>
+        audio13.currentTime = 0; 
+    });
+    </script>
 
-<script>
-const audio14 = document.getElementById('testobject14');
-const audioButton14 = document.getElementsByClassName('object14')[0];
+    <script>
+    const audio14 = document.getElementById('testobject14');
+    const audioButton14 = document.getElementsByClassName('object14')[0];
 
-audioButton14.addEventListener('mousedown', function(){
-    audio14.play();
-});
+    audioButton14.addEventListener('mousedown', function(){
+        audio14.play();
+    });
 
-audioButton14.addEventListener("mouseup", function() {
-    audio14.pause();
+    audioButton14.addEventListener("mouseup", function() {
+        audio14.pause();
 
-    audio14.currentTime = 0; 
-});
-</script>
+        audio14.currentTime = 0; 
+    });
+    </script>
 
-<script>
-const audio15 = document.getElementById('testobject15');
-const audioButton15 = document.getElementsByClassName('object15')[0];
+    <script>
+    const audio15 = document.getElementById('testobject15');
+    const audioButton15 = document.getElementsByClassName('object15')[0];
 
-audioButton15.addEventListener('mousedown', function(){
-    audio15.play();
-});
+    audioButton15.addEventListener('mousedown', function(){
+        audio15.play();
+    });
 
-audioButton15.addEventListener("mouseup", function() {
-    audio15.pause();
+    audioButton15.addEventListener("mouseup", function() {
+        audio15.pause();
 
-    audio15.currentTime = 0; 
-});
-</script>
+        audio15.currentTime = 0; 
+    });
+    </script>
 
-<script>
-const audio16 = document.getElementById('testobject16');
-const audioButton16 = document.getElementsByClassName('object16')[0];
+    <script>
+    const audio16 = document.getElementById('testobject16');
+    const audioButton16 = document.getElementsByClassName('object16')[0];
 
-audioButton16.addEventListener('mousedown', function(){
-    audio16.play();
-});
+    audioButton16.addEventListener('mousedown', function(){
+        audio16.play();
+    });
 
-audioButton16.addEventListener("mouseup", function() {
-    audio16.pause();
+    audioButton16.addEventListener("mouseup", function() {
+        audio16.pause();
 
-    audio16.currentTime = 0; 
-});
-</script>
+        audio16.currentTime = 0; 
+    });
+    </script>
 
-<script>
-const audio17 = document.getElementById('testobject17');
-const audioButton17 = document.getElementsByClassName('object17')[0];
+    <script>
+    const audio17 = document.getElementById('testobject17');
+    const audioButton17 = document.getElementsByClassName('object17')[0];
 
-audioButton17.addEventListener('mousedown', function(){
-    audio17.play();
-});
+    audioButton17.addEventListener('mousedown', function(){
+        audio17.play();
+    });
 
-audioButton17.addEventListener("mouseup", function() {
-    audio17.pause();
+    audioButton17.addEventListener("mouseup", function() {
+        audio17.pause();
 
-    audio17.currentTime = 0; 
-});
-</script>
+        audio17.currentTime = 0; 
+    });
+    </script>
 
-<script>
-const audio18 = document.getElementById('testobject18');
-const audioButton18 = document.getElementsByClassName('object18')[0];
+    <script>
+    const audio18 = document.getElementById('testobject18');
+    const audioButton18 = document.getElementsByClassName('object18')[0];
 
-audioButton18.addEventListener('mousedown', function(){
-    audio18.play();
-});
+    audioButton18.addEventListener('mousedown', function(){
+        audio18.play();
+    });
 
-audioButton18.addEventListener("mouseup", function() {
-    audio18.pause();
+    audioButton18.addEventListener("mouseup", function() {
+        audio18.pause();
 
-    audio18.currentTime = 0; 
-});
-</script>
+        audio18.currentTime = 0; 
+    });
+    </script>
 
-<script>
-const audio19 = document.getElementById('testobject19');
-const audioButton19 = document.getElementsByClassName('object19')[0];
+    <script>
+    const audio19 = document.getElementById('testobject19');
+    const audioButton19 = document.getElementsByClassName('object19')[0];
 
-audioButton19.addEventListener('mousedown', function(){
-    audio19.play();
-});
+    audioButton19.addEventListener('mousedown', function(){
+        audio19.play();
+    });
 
-audioButton19.addEventListener("mouseup", function() {
-    audio19.pause();
+    audioButton19.addEventListener("mouseup", function() {
+        audio19.pause();
 
-    audio19.currentTime = 0; 
-});
-</script>
+        audio19.currentTime = 0; 
+    });
+    </script>
 
-<script>
-const audio20 = document.getElementById('testobject20');
-const audioButton20 = document.getElementsByClassName('object20')[0];
+    <script>
+    const audio20 = document.getElementById('testobject20');
+    const audioButton20 = document.getElementsByClassName('object20')[0];
 
-audioButton20.addEventListener('mousedown', function(){
-    audio20.play();
-});
+    audioButton20.addEventListener('mousedown', function(){
+        audio20.play();
+    });
 
-audioButton20.addEventListener("mouseup", function() {
-    audio20.pause();
+    audioButton20.addEventListener("mouseup", function() {
+        audio20.pause();
 
-    audio20.currentTime = 0; 
-});
-</script>
-</div>
+        audio20.currentTime = 0; 
+    });
+    </script>
+    </div>
 
 </body>
 </html>

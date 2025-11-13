@@ -1,4 +1,4 @@
 .wizard-norm{background-color: goldenrod; width: 300px; height: 600px; position: absolute; bottom: 5%; right: 15%}
 
-.about-page-button{font-size: larger;background-color: rgb(102, 62, 111); width: 40px; height: 40px; position: absolute; top:2%; right:2%; color: white; display: flex; justify-content: center; align-items: center;}
+.about-page-button{font-size: larger;background-color: rgb(102, 62, 111); width: 40px; height: 40px; position: absolute; top:2%; right:2%; color: white; display: flex; justify-content: center; align-items: center; text-decoration: none; font-family: Georgia, 'Times New Roman', Times, serif;}
 

@@ -1,0 +1,6 @@
+.header{position:absolute; left:2%; top: 2%; font-size: 50px;}
+
+.main{width: 540px; height: 580px; position: absolute; right:8%; top: 25%; background-color: antiquewhite; padding: 0 15px 0 15px}
+.paragraph{text-align: center;}
+
+.door{background-color: rgb(96, 59, 30); width: 250px; height: 400px; position: absolute; bottom:30% ;left:2%}
