@@ -1,9 +1,10 @@
-.wizard-norm{background-color: goldenrod; width: 300px; height: 600px; position: absolute; bottom: 5%; right: 15%}
-.react1{background-color: rgb(218, 32, 32); width: 300px; height: 600px; position: absolute; bottom: 5%; right: 15%; display: none}
-.react2{background-color: rgb(175, 32, 218); width: 300px; height: 600px; position: absolute; bottom: 5%; right: 15%; display: none}
-.react3{background-color: rgb(32, 51, 218); width: 300px; height: 600px; position: absolute; bottom: 5%; right: 15%; display: none}
-.react4{background-color: rgb(218, 32, 206); width: 300px; height: 600px; position: absolute; bottom: 5%; right: 15%; display: none}
-.react5{background-color: rgb(32, 218, 69); width: 300px; height: 600px; position: absolute; bottom: 5%; right: 15%; display: none}
+wizard-norm{background-color: goldenrod; width: 300px; height: 600px; position: absolute; bottom: 5%; right: 15%}
+.wizard-norm{background-image:url(assets/content_image_5f8c0dde2ad5b.gif); width: 15%; height: 50%; position: absolute; bottom: 5%; right: 15%}
+.react1{background-color: rgb(218, 32, 32); width: 15%; height: 50%; position: absolute; bottom: 5%; right: 15%; display: none}
+.react2{background-color: rgb(175, 32, 218); width: 15%; height: 50%; position: absolute; bottom: 5%; right: 15%; display: none}
+.react3{background-color: rgb(32, 51, 218); width: 15%; height: 50%; position: absolute; bottom: 5%; right: 15%; display: none}
+.react4{background-color: rgb(218, 32, 206); width: 15%; height: 50%; position: absolute; bottom: 5%; right: 15%; display: none}
+.react5{background-color: rgb(32, 218, 69); width: 15%; height: 50%; position: absolute; bottom: 5%; right: 15%; display: none}
 
 body:has(.object1:active) .react1 {display:block;} 
 body:has(.object1:active) .wizard-norm {display:none;} 
