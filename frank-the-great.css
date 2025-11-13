@@ -1,4 +1,20 @@
 .wizard-norm{background-color: goldenrod; width: 300px; height: 600px; position: absolute; bottom: 5%; right: 15%}
+.react1{background-color: rgb(218, 32, 32); width: 300px; height: 600px; position: absolute; bottom: 5%; right: 15%; display: none}
+.react2{background-color: rgb(175, 32, 218); width: 300px; height: 600px; position: absolute; bottom: 5%; right: 15%; display: none}
+.react3{background-color: rgb(32, 51, 218); width: 300px; height: 600px; position: absolute; bottom: 5%; right: 15%; display: none}
+.react4{background-color: rgb(218, 32, 206); width: 300px; height: 600px; position: absolute; bottom: 5%; right: 15%; display: none}
+.react5{background-color: rgb(32, 218, 69); width: 300px; height: 600px; position: absolute; bottom: 5%; right: 15%; display: none}
+
+body:has(.object1:active) .react1 {display:block;} 
+body:has(.object1:active) .wizard-norm {display:none;} 
+body:has(.object2:active) .react2 {display:block;}
+body:has(.object2:active) .wizard-norm {display:none;} 
+body:has(.object3:active) .react3 {display:block;}
+body:has(.object3:active) .wizard-norm {display:none;} 
+body:has(.object4:active) .react4 {display:block;}
+body:has(.object4:active) .wizard-norm {display:none;} 
+body:has(.object6:active) .react5 {display:block;}
+body:has(.object6:active) .wizard-norm {display:none;} 
 
 .about-page-button{font-size: larger;background-color: rgb(102, 62, 111); width: 40px; height: 40px; position: absolute; top:2%; right:2%; color: white; display: flex; justify-content: center; align-items: center; text-decoration: none; font-family: Georgia, 'Times New Roman', Times, serif;}
 
