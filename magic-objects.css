@@ -26,3 +26,5 @@ a{color: white;}
 .object20{position:absolute; top:70% ; left:42% ;}
 
 .hide{display:none}
+
+.shelf{background-color: rgb(208, 129, 84); height: 79%; width: 47%; position: absolute; top:5%; left:5%}

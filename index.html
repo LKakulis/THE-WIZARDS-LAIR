@@ -11,9 +11,13 @@
 
 <body>
 
+<!-- BACKGROUND STUFFS -->
+
+<div class="shelf"></div>
+
 <!-- MAGICAL OBJECTS AND ITEMS -->
 <div class="mmm">
-    <div class="object-univ object1">wad of used gum</div>
+    <div class="object-univ object1 draggable ">wad of used gum</div>
     <div class="object-univ object2">semi-sentient can of clown</div>
     <div class="object-univ object3">buttons from enemy wizard's pants</div>
     <div class="object-univ object4">coil of copper wire</div>
@@ -45,37 +49,46 @@
 <div class="react5"> </div>
 
     <!-- text bubbles --><div>
-        <div class="text-bubble-univ text1"><p>object1</p></div>
-        <div class="text-bubble-univ text2"><p>object2</p></div>
-        <div class="text-bubble-univ text3"><p>object3</p></div>
-        <div class="text-bubble-univ text4"><p>object4</p></div>
+        <div class="text-bubble-intro"><p class="text-univ" id="typewriter-text" ></p></div>
+        <div class="text-bubble-univ text1"> <p class="text-univ" data-fulltext="Object 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
+        <div class="text-bubble-univ text2"> <p class="text-univ" data-fulltext="Object 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
+        <div class="text-bubble-univ text3"> <p class="text-univ" data-fulltext="Object 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
+        <div class="text-bubble-univ text4"> <p class="text-univ" data-fulltext="Object 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
+        <div class="text-bubble-univ text6"> <p class="text-univ" data-fulltext="Object 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
+        <div class="text-bubble-univ text7"> <p class="text-univ" data-fulltext="Object 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
+        <div class="text-bubble-univ text8"> <p class="text-univ" data-fulltext="Object 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
+        <div class="text-bubble-univ text10"> <p class="text-univ" data-fulltext="Object 10 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
+        <div class="text-bubble-univ text11"> <p class="text-univ" data-fulltext="Object 11 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
+        <div class="text-bubble-univ text13"> <p class="text-univ" data-fulltext="Object 13 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
+        <div class="text-bubble-univ text14"> <p class="text-univ" data-fulltext="Object 14 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
+        <div class="text-bubble-univ text16"> <p class="text-univ" data-fulltext="Object 16 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
+        <div class="text-bubble-univ text17"> <p class="text-univ" data-fulltext="Object 17 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
+        <div class="text-bubble-univ text19"> <p class="text-univ" data-fulltext="Object 19 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
+        <div class="text-bubble-univ text20"> <p class="text-univ" data-fulltext="Object 20 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>                
             <div class="hide">
                 div class="text-bubble-univ text5"><p>object5</p>/div>
             </div>
-        <div class="text-bubble-univ text6"><p>object6</p></div>
-        <div class="text-bubble-univ text7"><p>object7</p></div>
-        <div class="text-bubble-univ text8"><p>object8</p></div>
+        
             <div class="hide">
                 div class="text-bubble-univ text9"><p>object9</p>/div>
             </div>
-        <div class="text-bubble-univ text10"><p>object10</p></div>
-        <div class="text-bubble-univ text11"><p>object11</p></div>
+        
             <div class="hide">
                 div class="text-bubble-univ text12"><p>object12</p>/div>
             </div>
-        <div class="text-bubble-univ text13"><p>object13</p></div>
-        <div class="text-bubble-univ text14"><p>object14</p></div>
+        
             <div class="hide">
                 div class="text-bubble-univ text15"><p>object15</p>/div>
             </div>
-        <div class="text-bubble-univ text16"><p>object16</p></div>
-        <div class="text-bubble-univ text17"><p>object17</p></div>
+        
             <div class="hide">
                 div class="text-bubble-univ text18"><p>object18</p>/div>
             </div>
-        <div class="text-bubble-univ text19"><p>object19</p></div>
-        <div class="text-bubble-univ text20"><p>object20</p></div>
+        
     </div>
+
+
+
 
 <!-- other elements -->
 <a href="about-page.html" class="about-page-button">?</a>
@@ -176,23 +189,6 @@
     });
     </script>
 
-<div class="hide">
-    <scriptX>
-    const audio5 = document.getElementById('testobject5');
-    const audioButton5 = document.getElementsByClassName('object5')[0];
-
-    audioButton5.addEventListener('mousedown', function(){
-        audio5.play();
-    });
-
-    audioButton5.addEventListener("mouseup", function() {
-        audio5.pause();
-
-        audio5.currentTime = 0; 
-    });
-    </script>
-</div>
-
     <script>
     const audio6 = document.getElementById('testobject6');
     const audioButton6 = document.getElementsByClassName('object6')[0];
@@ -238,24 +234,7 @@
     });
     </script>
 
-<div class="hide">
-    <scriptX>
-    const audio9 = document.getElementById('testobject9');
-    const audioButton9 = document.getElementsByClassName('object9')[0];
-
-    audioButton9.addEventListener('mousedown', function(){
-        audio9.play();
-    });
-
-    audioButton9.addEventListener("mouseup", function() {
-        audio9.pause();
-
-        audio9.currentTime = 0; 
-    });
-    </script>
-</div>
-
-    <script>
+<script>
     const audio10 = document.getElementById('testobject10');
     const audioButton10 = document.getElementsByClassName('object10')[0];
 
@@ -284,23 +263,6 @@
         audio11.currentTime = 0; 
     });
     </script>
-
-<div class="hide">
-    <scriptX>
-    const audio12 = document.getElementById('testobject12');
-    const audioButton12 = document.getElementsByClassName('object12')[0];
-
-    audioButton12.addEventListener('mousedown', function(){
-        audio12.play();
-    });
-
-    audioButton12.addEventListener("mouseup", function() {
-        audio12.pause();
-
-        audio12.currentTime = 0; 
-    });
-    </script>
-</div>
 
     <script>
     const audio13 = document.getElementById('testobject13');
@@ -332,23 +294,6 @@
     });
     </script>
 
-<div class="hide">
-    <scriptX>
-    const audio15 = document.getElementById('testobject15');
-    const audioButton15 = document.getElementsByClassName('object15')[0];
-
-    audioButton15.addEventListener('mousedown', function(){
-        audio15.play();
-    });
-
-    audioButton15.addEventListener("mouseup", function() {
-        audio15.pause();
-
-        audio15.currentTime = 0; 
-    });
-    </script>
-</div>
-
     <script>
     const audio16 = document.getElementById('testobject16');
     const audioButton16 = document.getElementsByClassName('object16')[0];
@@ -379,23 +324,6 @@
     });
     </script>
 
-<div class="hide">
-    <scriptX>
-    const audio18 = document.getElementById('testobject18');
-    const audioButton18 = document.getElementsByClassName('object18')[0];
-
-    audioButton18.addEventListener('mousedown', function(){
-        audio18.play();
-    });
-
-    audioButton18.addEventListener("mouseup", function() {
-        audio18.pause();
-
-        audio18.currentTime = 0; 
-    });
-    </script>
-</div>
-
     <script>
     const audio19 = document.getElementById('testobject19');
     const audioButton19 = document.getElementsByClassName('object19')[0];
@@ -425,6 +353,134 @@
         audio20.currentTime = 0; 
     });
     </script>
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const typewriterElement = document.getElementById('typewriter-text');
+  const textToType = "WELCOME TO MY WIZARDS LAIR. Please look around at the objects and I will tell you about them!";
+  let i = 0;
+  const typingSpeed = 50;
+  const disappearanceDelay = 5000;
+
+  function typeWriter() {
+    if (i < textToType.length) {
+      typewriterElement.innerHTML += textToType.charAt(i);
+      i++;
+      setTimeout(typeWriter, typingSpeed);
+    } else {
+      setTimeout(() => {
+        typewriterElement.style.display = 'none';
+      }, disappearanceDelay);
+    }
+  }
+
+  typeWriter();
+});
+    </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const objects = document.querySelectorAll(".object-univ");
+
+    objects.forEach(obj => {
+
+        // Identify object number (1–20)
+        const numClass = [...obj.classList].find(c => c.startsWith("object") && c !== "object-univ");
+        if (!numClass) return;
+
+        const num = numClass.replace("object", "");
+        const bubble = document.querySelector(`.text${num}`);
+        if (!bubble) return;
+
+        const p = bubble.querySelector(".text-univ");
+        const fullText = p.dataset.fulltext;
+        let typerInterval = null;
+        let index = 0;
+
+        function startTypewriter() {
+            p.textContent = "";
+            index = 0;
+
+            typerInterval = setInterval(() => {
+                if (index < fullText.length) {
+                    p.textContent += fullText.charAt(index);
+                    index++;
+                } else {
+                    clearInterval(typerInterval);
+                }
+            }, 50); 
+        }
+
+        function stopTypewriter() {
+            clearInterval(typerInterval);
+            p.textContent = "";
+        }
+
+        obj.addEventListener("pointerdown", () => {
+            bubble.style.display = "block";
+            startTypewriter();
+        });
+
+        function hide() {
+            bubble.style.display = "none";
+            stopTypewriter();
+        }
+
+        obj.addEventListener("pointerup", hide);
+        obj.addEventListener("pointerleave", hide);
+    });
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    // ---- DRAGGABLE SYSTEM ----
+    const draggables = document.querySelectorAll(".draggable");
+
+    draggables.forEach(el => {
+        let offsetX = 0, offsetY = 0;
+        let isDragging = false;
+
+        el.addEventListener("pointerdown", (e) => {
+            // Prevent hold-to-typewriter from activating during drag
+            if (el.classList.contains("draggable")) {
+                isDragging = true;
+                offsetX = e.clientX - el.getBoundingClientRect().left;
+                offsetY = e.clientY - el.getBoundingClientRect().top;
+                el.setPointerCapture(e.pointerId);
+            }
+        });
+
+        el.addEventListener("pointermove", (e) => {
+            if (!isDragging) return;
+            
+            let x = e.clientX - offsetX;
+            let y = e.clientY - offsetY;
+
+            el.style.left = x + "px";
+            el.style.top = y + "px";
+            console.log(e)
+        });
+
+        el.addEventListener("pointerup", (e) => {
+            if (isDragging) {
+                isDragging = false;
+                el.releasePointerCapture(e.pointerId);
+            }
+        });
+
+        el.addEventListener("pointerleave", (e) => {
+            if (isDragging) {
+                isDragging = false;
+                el.releasePointerCapture(e.pointerId);
+            }
+        });
+    });
+
+});
+</script>
     </div>
 
 </body>
