@@ -55,7 +55,7 @@
 
 
     <!-- text bubbles --><div>
-        <div class="text-bubble-intro"><p class="text-univ" id="typewriter-text" ></p></div>
+        <div id="intro-text" class="text-bubble-intro"><p class="text-univ" id="typewriter-text" ></p></div>
         <div class="text-bubble-univ text1"> <p class="text-univ" data-fulltext="Object 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
         <div class="text-bubble-univ text2"> <p class="text-univ" data-fulltext="Object 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
         <div class="text-bubble-univ text3"> <p class="text-univ" data-fulltext="Object 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis ligula porttitor, consectetur quam et, tincidunt sem."></p> </div>
@@ -383,6 +383,21 @@ document.addEventListener('DOMContentLoaded', () => {
   typeWriter();
 });
     </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const intro = document.getElementById("intro-text");
+
+    // If the intro was shown before, hide it immediately
+    if (localStorage.getItem("introShown") === "true") {
+        intro.style.display = "none";
+    } else {
+        // First time visitor → show intro and mark as shown
+        intro.style.display = "block";
+        localStorage.setItem("introShown", "true");
+    }
+});
+</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
