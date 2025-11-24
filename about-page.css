@@ -1,6 +1,8 @@
-.header{position:absolute; left:2%; top: 2%; font-size: 50px;}
+body{background-image: url(assets/wizard_background.jpg);  background-size: cover; background-repeat: no-repeat; background-position: center center; background-attachment: fixed;}
 
-.main{width: 540px; height: 580px; position: absolute; right:8%; top: 25%; background-color: antiquewhite; padding: 0 15px 0 15px}
+.header{position:absolute; left:4%; top: 0%; font-size: 5.3rem; color: #d9c96d; font-family: "Pirata One", system-ui; font-weight: 400;font-style: normal;}
+
+.main{width: 36rem; height: 45rem; position: absolute; right:14rem; top: 25%; background-color: antiquewhite; padding: 0 15px 0 15px}
 .paragraph{text-align: center;}
 
-.door{background-color: rgb(96, 59, 30); width: 250px; height: 400px; position: absolute; bottom:30% ;left:2%}
+.door{background-color: rgb(96, 59, 30); width: 27rem; height: 44rem; position: absolute; bottom:0%; left:6%}

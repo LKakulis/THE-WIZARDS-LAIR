@@ -14,6 +14,17 @@
 <h1>PRETTY LEAF</h1>
 </header>
 
+<audio id="testobject18" src="../assets/testaudio/testobject18.mp3" preload="auto"></audio>
+
+<script>
+function enableAudioOnce() {
+    const audio = document.getElementById("testobject18");
+    audio.play();
+    document.removeEventListener("click", enableAudioOnce);
+}
+
+document.addEventListener("click", enableAudioOnce);
+</script>
 
 <a href="../index.html" class="mini-wizard"></a>
 

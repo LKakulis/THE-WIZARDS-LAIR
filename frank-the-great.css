@@ -1,21 +1,55 @@
-wizard-norm{background-color: goldenrod; width: 300px; height: 600px; position: absolute; bottom: 5%; right: 15%}
-.wizard-norm{background-image:url(assets/content_image_5f8c0dde2ad5b.gif); width: 15%; height: 50%; position: absolute; bottom: 5%; right: 15%}
-.react1{background-color: rgb(218, 32, 32); width: 15%; height: 50%; position: absolute; bottom: 5%; right: 15%; display: none}
-.react2{background-color: rgb(175, 32, 218); width: 15%; height: 50%; position: absolute; bottom: 5%; right: 15%; display: none}
-.react3{background-color: rgb(32, 51, 218); width: 15%; height: 50%; position: absolute; bottom: 5%; right: 15%; display: none}
-.react4{background-color: rgb(218, 32, 206); width: 15%; height: 50%; position: absolute; bottom: 5%; right: 15%; display: none}
-.react5{background-color: rgb(32, 218, 69); width: 15%; height: 50%; position: absolute; bottom: 5%; right: 15%; display: none}
+.idle{width: 44%; height: 103%; position: absolute; bottom: 0%; right: 1%; background-repeat: no-repeat; display: block}
+.baseline{width: 44%; height: 103%; position: absolute; bottom: 0%; right: 1%;; display: none}
+.excitement{width: 44%; height: 103%; position: absolute; bottom: 0%; right: 1%; display: none}
+.anger{width: 44%; height: 103%; position: absolute; bottom: 0; right: 1%; display: none}
+.fear{width: 44%; height: 103%; position: absolute; bottom: 0%; right: 1%;; display: none}
+.confusion{width: 44%; height: 103%; position: absolute; bottom: 0%; right: 1%;; display: none}
 
-body:has(.object1:active) .react1 {display:block;} 
-body:has(.object1:active) .wizard-norm {display:none;} 
-body:has(.object2:active) .react2 {display:block;}
-body:has(.object2:active) .wizard-norm {display:none;} 
-body:has(.object3:active) .react3 {display:block;}
-body:has(.object3:active) .wizard-norm {display:none;} 
-body:has(.object4:active) .react4 {display:block;}
-body:has(.object4:active) .wizard-norm {display:none;} 
-body:has(.object6:active) .react5 {display:block;}
-body:has(.object6:active) .wizard-norm {display:none;} 
+body:has(.object1:active) .baseline {display:block;} 
+body:has(.object1:active) .idle {display:none;} 
+
+body:has(.object2:active) .excitement {display:block;} 
+body:has(.object2:active) .idle {display:none;} 
+
+body:has(.object3:active) .anger {display:block;} 
+body:has(.object3:active) .idle {display:none;}
+
+body:has(.object4:active) .baseline {display:block;} 
+body:has(.object4:active) .idle {display:none;}
+
+body:has(.object6:active) .confusion {display:block;} 
+body:has(.object6:active) .idle {display:none;}
+
+body:has(.object7:active) .fear {display:block;} 
+body:has(.object7:active) .idle {display:none;}
+
+body:has(.object8:active) .excitement {display:block;} 
+body:has(.object8:active) .idle {display:none;}
+
+body:has(.object10:active) .anger {display:block;} 
+body:has(.object10:active) .idle {display:none;}
+
+body:has(.object11:active) .anger {display:block;} 
+body:has(.object11:active) .idle {display:none;}
+
+body:has(.object13:active) .fear {display:block;} 
+body:has(.object13:active) .idle {display:none;}
+
+body:has(.object14:active) .excitement {display:block;} 
+body:has(.object14:active) .idle {display:none;}
+
+body:has(.object16:active) .fear {display:block;} 
+body:has(.object16:active) .idle {display:none;}
+
+body:has(.object17:active) .anger {display:block;} 
+body:has(.object17:active) .idle {display:none;}
+
+body:has(.object19:active) .excitement {display:block;} 
+body:has(.object19:active) .idle {display:none;}
+
+body:has(.object20:active) .excitement {display:block;} 
+body:has(.object20:active) .idle {display:none;}
+
 
 .about-page-button{font-size: larger;background-color: rgb(102, 62, 111); width: 2.7%; height: 5%; position: absolute; top:2%; right:2%; color: white; display: flex; justify-content: center; align-items: center; text-decoration: none; font-family: Georgia, 'Times New Roman', Times, serif;}
 
