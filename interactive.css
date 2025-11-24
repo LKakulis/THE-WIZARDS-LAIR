@@ -1,7 +1,7 @@
 body{background-image: url(assets/wizard_background.jpg);  background-size: cover; background-repeat: no-repeat; background-position: center center; background-attachment: fixed;}
 
 .text-bubble-univ{display:none; position: absolute; right: 10%; bottom: 6%; background-color: rgba(0, 0, 0, 0.564); max-width:26%}
-.text-univ{margin: 10px; color: #d9c96d; text-align: center; font-size: 200%; font-family: "Pirata One", system-ui; font-weight: 400;font-style: normal;}
+.text-univ{margin: 10px; color: #d9c96d; text-align: center; font-size: 530%; font-family: "Pirata One", system-ui; font-weight: 400;font-style: normal;}
 .text-bubble-intro{display:block; position: absolute; right: 10%; bottom: 6%; background-color: rgba(0, 0, 0, 0.564); max-width:26%}
 
 .pirata-one-regular {
