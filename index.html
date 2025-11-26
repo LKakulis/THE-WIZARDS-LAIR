@@ -502,6 +502,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 </script>
+
+<script>
+    // On user interaction to allow audio
+    localStorage.setItem('audioAllowed', 'true');
+
+    // On page load
+    if (localStorage.getItem('audioAllowed') === 'true') {
+        // Play audio
+        var audio = document.getElementById('myAudio');
+        audio.play();
+    }
+</script>
     </div>
 
 </body>
