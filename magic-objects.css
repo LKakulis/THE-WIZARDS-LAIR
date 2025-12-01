@@ -1,29 +1,78 @@
-.object-univ{background-color:blueviolet; height: 60px; width: 60px; transition: all 300ms;}
-.object-univ:hover{height: 70px; width: 70px; transform: translate(-5px, -5px);}
+.object-univ{transition: all 300ms;}
+
 
 .mmm{color:white; font-size:smaller;}
 a{color: white;}
 
-.object1{position:absolute; top:18%; left: 15%;}
-.object2{position:absolute; top:18% ; left:24% ;}
-.object3{position:absolute; top:18% ; left:33% ;}
-.object4{position:absolute; top:18% ; left:40% ;}
-.object5{position:absolute; top:33% ; left:15% ;}
-.object6{position:absolute; top:34% ; left:22% ;}
-.object7{position:absolute; top:34% ; left:30% ;}
-.object8{position:absolute; top:34% ; left:39% ;}
-.object9{position:absolute; top:48% ; left:16% ;}
-.object10{position:absolute; top:48% ; left:23% ;}
-.object11{position:absolute; top:48% ; left:32% ;}
-.object12{position:absolute; top:48% ; left:40% ;}
-.object13{position:absolute; top:64% ; left:15% ;}
-.object14{position:absolute; top:64% ; left:24% ;}
-.object15{position:absolute; top:65% ; left:33% ;}
-.object16{position:absolute; top:65% ; left:40% ;}
-.object17{position:absolute; top:80% ; left:15% ;}
-.object18{position:absolute; top:80% ; left:23% ;}
-.object19{position:absolute; top:81% ; left:31% ;}
-.object20{position:absolute; top:80% ; left:39% ;}
+.object1{position:absolute; top:12%; left: 14%; height: 15%; width: 7.5%;}
+.object1hover{position:absolute; top:12%; left: 14%; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object1:hover) .object1hover {display:block;} 
+
+.object2{position:absolute; top:13% ; left:23% ; height: 15%; width: 7.5%;}
+.object2hover{position:absolute; top:13% ; left:23% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object2:hover) .object2hover {display:block;} 
+
+.object3{position:absolute; top:16.5% ; left:31% ; height: 15%; width: 7.5%;}
+.object3hover{position:absolute; top:16.5% ; left:31% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object3:hover) .object3hover {display:block;} 
+
+.object4{position:absolute; top:18% ; left:40% ; height: 15%; width: 7.5%;}
+.object4hover{position:absolute; top:18% ; left:40% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object4:hover) .object4hover {display:block;} 
+
+.object5{position:absolute; top:33% ; left:15% ; height: 15%; width: 7.5%; background-image: url(assets/objects/spooky.png); background-size: contain; background-repeat: no-repeat;}
+
+.object6{position:absolute; top:34% ; left:22% ; height: 15%; width: 7.5%;}
+.object6hover{position:absolute; top:34% ; left:22% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object6:hover) .object6hover {display:block;} 
+
+.object7{position:absolute; top:34% ; left:30% ; height: 15%; width: 7.5%;}
+.object7hover{position:absolute; top:34% ; left:30% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object7:hover) .object7hover {display:block;} 
+
+.object8{position:absolute; top:34% ; left:39% ; height: 15%; width: 7.5%;}
+.object8hover{position:absolute; top:34% ; left:39% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object8:hover) .object8hover {display:block;} 
+
+.object9{position:absolute; top:48% ; left:16% ; height: 15%; width: 7.5%; background-image: url(assets/objects/shapes.png); background-size: contain; background-repeat: no-repeat;}
+
+.object10{position:absolute; top:48% ; left:23% ; height: 15%; width: 7.5%;}
+.object10hover{position:absolute; top:48% ; left:23% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object10:hover) .object10hover {display:block;} 
+
+.object11{position:absolute; top:48% ; left:32% ; height: 15%; width: 7.5%;}
+.object11hover{position:absolute; top:48% ; left:32% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object11:hover) .object11hover {display:block;} 
+
+.object12{position:absolute; top:48% ; left:40% ; height: 15%; width: 7.5%; background-image: url(assets/objects/cereal.png); background-size: contain; background-repeat: no-repeat;}
+
+.object13{position:absolute; top:64% ; left:15% ; height: 15%; width: 7.5%;}
+.object13hover{position:absolute; top:64% ; left:15% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object13:hover) .object13hover {display:block;} 
+
+.object14{position:absolute; top:64% ; left:24% ; height: 15%; width: 7.5%;}
+.object14hover{position:absolute; top:64% ; left:24% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object14:hover) .object14hover {display:block;} 
+
+.object15{position:absolute; top:65% ; left:33% ; height: 15%; width: 7.5%; background-image: url(assets/objects/portal.gif); background-size: contain; background-repeat: no-repeat;}
+
+.object16{position:absolute; top:65% ; left:40% ; height: 15%; width: 7.5%;}
+.object16hover{position:absolute; top:65% ; left:40% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object16:hover) .object16hover {display:block;} 
+
+.object17{position:absolute; top:80% ; left:15% ; height: 15%; width: 7.5%;}
+.object17hover{position:absolute; top:80% ; left:15% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object17:hover) .object17hover {display:block;} 
+
+.object18{position:absolute; top:80% ; left:23% ; height: 15%; width: 7.5%;  background-image: url(); background-size: contain; background-repeat: no-repeat;}
+
+.object19{position:absolute; top:81% ; left:31% ; height: 15%; width: 7.5%;}
+.object19hover{position:absolute; top:81% ; left:31% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object19:hover) .object19hover {display:block;} 
+
+.object20{position:absolute; top:80% ; left:39% ; height: 15%; width: 7.5%;}
+.object20hover{position:absolute; top:80% ; left:39% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object20:hover) .object20hover {display:block;} 
 
 .hide{display:none}
 

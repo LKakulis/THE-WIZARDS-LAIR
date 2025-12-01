@@ -10,8 +10,3 @@ body{background-image: url(assets/wizard_background.jpg);  background-size: cove
   font-style: normal;
 }
 
-
-.draggable {cursor: grab;}
-
-.draggable:active {cursor: grabbing;}
-

@@ -22,26 +22,65 @@
 
 <!-- MAGICAL OBJECTS AND ITEMS -->
 <div class="mmm">
-    <div class="object-univ object1 draggable ">wad of used gum</div>
-    <div class="object-univ object2">semi-sentient can of clown</div>
-    <div class="object-univ object3">buttons from enemy wizard's pants</div>
-    <div class="object-univ object4">coil of copper wire</div>
-    <a href="./dimensions/spooky-cave.html" class="object-univ object5">bottle of spooky cave</a>
-    <div class="object-univ object6">cheese</div>
-    <div class="object-univ object7">someones nose from got your nose</div>
-    <div class="object-univ object8">Gumble</div>
-    <a href="./dimensions/shapes-in-timeout.html" class="object-univ object9">shapes in timeout</a>
-    <div class="object-univ object10">reserve mustache</div>
-    <div class="object-univ object11">bottom segment of car keys</div>
-    <a href="./dimensions/favorite-breakfast-cereal.html" class="object-univ object12">favorite breakfast cereal</a>
-    <div class="object-univ object13">bottle of music one couldn't forget</div>
-    <div class="object-univ object14">favorite breakfast cereal (toy removed)</div>
-    <a href="./dimensions/interdimensional-globulul.html" class="object-univ object15">INTERDIMENSIONAL GLOBULUL</a>
-    <div class="object-univ object16">glass bicycle</div>
-    <div class="object-univ object17">mini wizard with spoon (evil?)</div>
-    <a href="./dimensions/pretty-leaf.html" class="object-univ object18">pretty leaf</a>
-    <div class="object-univ object19">bowladrome gift card (points or no?)</div>
-    <div class="object-univ object20">Lane lines from highway</div>
+    <img src="./assets/objects/gum.png" class="object-univ object1">
+    <img src="./assets/objects-hover/gum-copy.png" class="object-univ object1hover">
+
+    <img src="./assets/objects/clown.png" class="object-univ object2">
+    <img src="./assets/objects-hover/clown-copy.png" class="object-univ object2hover">
+
+    <img src="./assets/objects/button.png" class="object-univ object3">
+    <img src="./assets/objects-hover/button-copy.png" class="object-univ object3hover">
+
+    <img src="./assets/objects/wire.png" class="object-univ object4">
+    <img src="./assets/objects-hover/wire-copy.png" class="object-univ object4hover">
+
+    <a href="./dimensions/spooky-cave.html" class="object-univ object5"></a>
+
+
+    <img src="./assets/objects/cheese.png" class="object-univ object6">
+    <img src="./assets/objects-hover/cheese-copy.png" class="object-univ object6hover">
+
+    <img src="./assets/objects/nose.png" class="object-univ object7">
+    <img src="./assets/objects-hover/nose-copy.png" class="object-univ object7hover">
+
+    <img src="./assets/objects/grujble.png" class="object-univ object8">
+    <img src="./assets/objects-hover/grujble-copy.png" class="object-univ object8hover">
+
+    <a href="./dimensions/shapes-in-timeout.html" class="object-univ object9"></a>
+
+
+    <img src="./assets/objects/mustache.png" class="object-univ object10">
+    <img src="./assets/objects-hover/mustache-copy.png" class="object-univ object10hover">
+
+    <img src="./assets/objects/key.png" class="object-univ object11">
+    <img src="./assets/objects-hover/key-copy.png" class="object-univ object11hover">
+
+    <a href="./dimensions/favorite-breakfast-cereal.html" class="object-univ object12"></a>
+
+
+    <img src="./assets/objects/music.png" class="object-univ object13">
+    <img src="./assets/objects-hover/music-copy.png" class="object-univ object13hover">
+
+    <img src="./assets/objects/toiletries.png" class="object-univ object14">
+    <img src="./assets/objects-hover/toiletries-copy.png" class="object-univ object14hover">
+
+    <a href="./dimensions/interdimensional-globulul.html" class="object-univ object15"></a>
+
+
+    <img src="./assets/objects/glass.png" class="object-univ object16">
+    <img src="./assets/objects-hover/glass-copy.png" class="object-univ object16hover">
+
+    <img src="./assets/objects/mini-wizard.png" class="object-univ object17">
+    <img src="./assets/objects-hover/mini-wizard-copy.png" class="object-univ object17hover">
+
+    <a href="./dimensions/pretty-leaf.html" class="object-univ object18"></a>
+
+
+    <img src="./assets/objects/card.png" class="object-univ object19">
+    <img src="./assets/objects-hover/card-copy.png" class="object-univ object19hover">
+
+    <img src="./assets/objects/lanes.png" class="object-univ object20">
+    <img src="./assets/objects-hover/lanes-copy.png" class="object-univ object20hover">
 </div>
 
 
@@ -135,230 +174,43 @@
 
     <!-- scripts --> <div>
     <script>
-    const audio = document.getElementById('testobject1');
-    const audioButton = document.getElementsByClassName('object1')[0];
+document.addEventListener("DOMContentLoaded", () => {
 
+    const objects = document.querySelectorAll(".object-univ");  
+    let currentAudio = null;
 
-    audioButton.addEventListener('mousedown', function(){
-        audio.play();
+    function stopAllAudio() {
+        document.querySelectorAll("audio").forEach(a => {
+            a.pause();
+            a.currentTime = 0;
+        });
+        currentAudio = null;
+    }
+
+    objects.forEach(obj => {
+
+        const numClass = [...obj.classList].find(c => c.startsWith("object") && c !== "object-univ");
+        if (!numClass) return;
+
+        const num = numClass.replace("object", "");
+        const audio = document.getElementById(`testobject${num}`);
+        if (!audio) return;
+
+        obj.addEventListener("pointerdown", () => {
+            stopAllAudio();
+
+            currentAudio = audio;
+            currentAudio.play().catch(err => console.warn(err));
+        });
+
+        obj.addEventListener("pointerup", stopAllAudio);
+        obj.addEventListener("pointerleave", stopAllAudio);
     });
 
-    audioButton.addEventListener("mouseup", function() {
-        audio.pause();
+    document.addEventListener("pointerup", stopAllAudio);
+});
+</script>
 
-        audio.currentTime = 0; 
-    });
-    </script>
-
-    <script>
-    const audio2 = document.getElementById('testobject2');
-    const audioButton2 = document.getElementsByClassName('object2')[0];
-
-    audioButton2.addEventListener('mousedown', function(){
-        audio2.play();
-    });
-
-    audioButton2.addEventListener("mouseup", function() {
-        audio2.pause();
-
-        audio2.currentTime = 0; 
-    });
-    </script>
-
-    <script>
-    const audio3 = document.getElementById('testobject3');
-    const audioButton3 = document.getElementsByClassName('object3')[0];
-
-    audioButton3.addEventListener('mousedown', function(){
-        audio3.play();
-    });
-
-    audioButton3.addEventListener("mouseup", function() {
-        audio3.pause();
-
-        audio3.currentTime = 0; 
-    });
-    </script>
-
-    <script>
-    const audio4 = document.getElementById('testobject4');
-    const audioButton4 = document.getElementsByClassName('object4')[0];
-
-    audioButton4.addEventListener('mousedown', function(){
-        audio4.play();
-    });
-
-    audioButton4.addEventListener("mouseup", function() {
-        audio4.pause();
-
-        audio4.currentTime = 0; 
-    });
-    </script>
-
-    <script>
-    const audio6 = document.getElementById('testobject6');
-    const audioButton6 = document.getElementsByClassName('object6')[0];
-
-    audioButton6.addEventListener('mousedown', function(){
-        audio6.play();
-    });
-
-    audioButton6.addEventListener("mouseup", function() {
-        audio6.pause();
-
-        audio6.currentTime = 0; 
-    });
-    </script>
-
-    <script>
-    const audio7 = document.getElementById('testobject7');
-    const audioButton7 = document.getElementsByClassName('object7')[0];
-
-    audioButton7.addEventListener('mousedown', function(){
-        audio7.play();
-    });
-
-    audioButton7.addEventListener("mouseup", function() {
-        audio7.pause();
-
-        audio7.currentTime = 0; 
-    });
-    </script>
-
-    <script>
-    const audio8 = document.getElementById('testobject8');
-    const audioButton8 = document.getElementsByClassName('object8')[0];
-
-    audioButton8.addEventListener('mousedown', function(){
-        audio8.play();
-    });
-
-    audioButton8.addEventListener("mouseup", function() {
-        audio8.pause();
-
-        audio8.currentTime = 0; 
-    });
-    </script>
-
-<script>
-    const audio10 = document.getElementById('testobject10');
-    const audioButton10 = document.getElementsByClassName('object10')[0];
-
-    audioButton10.addEventListener('mousedown', function(){
-        audio10.play();
-    });
-
-    audioButton10.addEventListener("mouseup", function() {
-        audio10.pause();
-
-        audio10.currentTime = 0; 
-    });
-    </script>
-
-    <script>
-    const audio11 = document.getElementById('testobject11');
-    const audioButton11 = document.getElementsByClassName('object11')[0];
-
-    audioButton11.addEventListener('mousedown', function(){
-        audio11.play();
-    });
-
-    audioButton11.addEventListener("mouseup", function() {
-        audio11.pause();
-
-        audio11.currentTime = 0; 
-    });
-    </script>
-
-    <script>
-    const audio13 = document.getElementById('testobject13');
-    const audioButton13 = document.getElementsByClassName('object13')[0];
-
-    audioButton13.addEventListener('mousedown', function(){
-        audio13.play();
-    });
-
-    audioButton13.addEventListener("mouseup", function() {
-        audio13.pause();
-
-        audio13.currentTime = 0; 
-    });
-    </script>
-
-    <script>
-    const audio14 = document.getElementById('testobject14');
-    const audioButton14 = document.getElementsByClassName('object14')[0];
-
-    audioButton14.addEventListener('mousedown', function(){
-        audio14.play();
-    });
-
-    audioButton14.addEventListener("mouseup", function() {
-        audio14.pause();
-
-        audio14.currentTime = 0; 
-    });
-    </script>
-
-    <script>
-    const audio16 = document.getElementById('testobject16');
-    const audioButton16 = document.getElementsByClassName('object16')[0];
-
-    audioButton16.addEventListener('mousedown', function(){
-        audio16.play();
-    });
-
-    audioButton16.addEventListener("mouseup", function() {
-        audio16.pause();
-
-        audio16.currentTime = 0; 
-    });
-    </script>
-
-    <script>
-    const audio17 = document.getElementById('testobject17');
-    const audioButton17 = document.getElementsByClassName('object17')[0];
-
-    audioButton17.addEventListener('mousedown', function(){
-        audio17.play();
-    });
-
-    audioButton17.addEventListener("mouseup", function() {
-        audio17.pause();
-
-        audio17.currentTime = 0; 
-    });
-    </script>
-
-    <script>
-    const audio19 = document.getElementById('testobject19');
-    const audioButton19 = document.getElementsByClassName('object19')[0];
-
-    audioButton19.addEventListener('mousedown', function(){
-        audio19.play();
-    });
-
-    audioButton19.addEventListener("mouseup", function() {
-        audio19.pause();
-
-        audio19.currentTime = 0; 
-    });
-    </script>
-
-    <script>
-    const audio20 = document.getElementById('testobject20');
-    const audioButton20 = document.getElementsByClassName('object20')[0];
-
-    audioButton20.addEventListener('mousedown', function(){
-        audio20.play();
-    });
-
-    audioButton20.addEventListener("mouseup", function() {
-        audio20.pause();
-
-        audio20.currentTime = 0; 
-    });
-    </script>
 
     <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -382,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   typeWriter();
 });
-    </script>
+</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -405,7 +257,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     objects.forEach(obj => {
 
-        // Identify object number (1–20)
         const numClass = [...obj.classList].find(c => c.startsWith("object") && c !== "object-univ");
         if (!numClass) return;
 
