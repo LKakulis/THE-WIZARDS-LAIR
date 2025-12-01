@@ -35,7 +35,7 @@
     <img src="./assets/objects-hover/wire-copy.png" class="object-univ object4hover">
 
     <a href="./dimensions/spooky-cave.html" class="object-univ object5"></a>
-
+    <img src="./assets/objects-hover/spooky-copy.png" class="object-univ object5hover">
 
     <img src="./assets/objects/cheese.png" class="object-univ object6">
     <img src="./assets/objects-hover/cheese-copy.png" class="object-univ object6hover">
@@ -47,7 +47,7 @@
     <img src="./assets/objects-hover/grujble-copy.png" class="object-univ object8hover">
 
     <a href="./dimensions/shapes-in-timeout.html" class="object-univ object9"></a>
-
+    <img src="./assets/objects-hover/shapes-copy.png" class="object-univ object9hover">
 
     <img src="./assets/objects/mustache.png" class="object-univ object10">
     <img src="./assets/objects-hover/mustache-copy.png" class="object-univ object10hover">
@@ -56,6 +56,7 @@
     <img src="./assets/objects-hover/key-copy.png" class="object-univ object11hover">
 
     <a href="./dimensions/favorite-breakfast-cereal.html" class="object-univ object12"></a>
+    <img src="./assets/objects-hover/cereal-copy.png" class="object-univ object12hover">
 
 
     <img src="./assets/objects/music.png" class="object-univ object13">
@@ -65,7 +66,7 @@
     <img src="./assets/objects-hover/toiletries-copy.png" class="object-univ object14hover">
 
     <a href="./dimensions/interdimensional-globulul.html" class="object-univ object15"></a>
-
+    <img src="./assets/objects-hover/portal-hover.gif" class="object-univ object15hover">
 
     <img src="./assets/objects/glass.png" class="object-univ object16">
     <img src="./assets/objects-hover/glass-copy.png" class="object-univ object16hover">
@@ -74,6 +75,7 @@
     <img src="./assets/objects-hover/mini-wizard-copy.png" class="object-univ object17hover">
 
     <a href="./dimensions/pretty-leaf.html" class="object-univ object18"></a>
+    <img src="./assets/nodding-smoking-monkey-approves.gif" class="object-univ object18hover">
 
 
     <img src="./assets/objects/card.png" class="object-univ object19">
@@ -240,11 +242,9 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("DOMContentLoaded", () => {
     const intro = document.getElementById("intro-text");
 
-    // If the intro was shown before, hide it immediately
     if (localStorage.getItem("introShown") === "true") {
         intro.style.display = "none";
     } else {
-        // First time visitor → show intro and mark as shown
         intro.style.display = "block";
         localStorage.setItem("introShown", "true");
     }
