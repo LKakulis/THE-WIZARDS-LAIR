@@ -1,1 +1,2 @@
-.mini-wizard{background-image: url(../assets/nodding-smoking-monkey-approves.gif); height: 60px; width: 60px; background-size: contain; position:absolute; bottom: 5%; left: 2.5%;}
+.mini-wizard{background-image: url(../assets/wizard_animations/tiny-wizard.gif); height: 8%; width: 8%; background-size: contain; background-repeat: no-repeat; position:absolute; bottom: 5%; left: 2.5%;}
+.mini-wizard:hover{transition: all 100ms; transform: scale(1.1); translate: 2%;}

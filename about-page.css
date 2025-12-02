@@ -1,8 +1,11 @@
 body{background-image: url(assets/wizard_background.jpg);  background-size: cover; background-repeat: no-repeat; background-position: center center; background-attachment: fixed;}
 
-.header{position:absolute; left:4%; top: 0%; font-size: 530%; color: #d9c96d; font-family: "Pirata One", system-ui; font-weight: 400;font-style: normal;}
+.header{position:absolute; left:4%; top: 6%; width: auto; height:32%;}
+.headerfont{font-size: 8vw; color: #d9c96d; font-family: "Pirata One", system-ui; font-weight: 400; font-style: normal; margin:0}
 
-.main{width: 36rem; height: 45rem; position: absolute; right:14rem; top: 25%; background-color: antiquewhite; padding: 0 15px 0 15px}
-.paragraph{text-align: center;}
+.main{width: 39%; height: 88%; position: absolute; right:3%; top: 6%; background-image: url(assets/scroll.png); background-repeat: no-repeat; background-size:108% 104%; background-position: center;}
+.paragraph{font-family: "Pirata One", system-ui; text-align: center; font-size: 1vw; line-height: 1.5vw; padding: 200px 148px 0 140px;}
 
-.door{background-color: rgb(96, 59, 30); width: 27rem; height: 44rem; position: absolute; bottom:0%; left:6%}
+.door{width: 33%; height: 71%; position: absolute; bottom:0%; left:5%}
+
+.torch{width:5%; height: auto; position: absolute; top: 36%; right:50%}

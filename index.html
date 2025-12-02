@@ -18,6 +18,7 @@
 
 <!-- BACKGROUND STUFFS -->
 
+
 <img src="assets/wizard_shelf_large.png" class="shelf">
 
 <!-- MAGICAL OBJECTS AND ITEMS -->
@@ -138,7 +139,7 @@
 
 
 <!-- other elements -->
-<a href="about-page.html" class="about-page-button">?</a>
+<a href="about-page.html" class="about-page-button"></a>
 
     <!-- audio --><div>
         <audio id="testobject1" src="./assets/testaudio/testobject1.mp3" preload="auto"></audio>
@@ -174,7 +175,7 @@
     </div>
 
 
-    <!-- scripts --> <div>
+    <!-- scripts --> <div>      
     <script>
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -213,6 +214,25 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    if (localStorage.getItem("audioAllowed") === "true") {
+
+        const unlockAudio = () => {
+            document.querySelectorAll("audio").forEach(a => {
+                a.play().catch(()=>{});
+                a.pause();
+                a.currentTime = 0;
+            });
+
+            document.removeEventListener("pointerdown", unlockAudio);
+        };
+
+        document.addEventListener("pointerdown", unlockAudio);
+    }
+});
+</script>
 
     <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -303,6 +323,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 </script>
+
+
+
 
 
     </div>

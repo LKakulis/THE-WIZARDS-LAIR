@@ -14,7 +14,7 @@
 <h1>PRETTY LEAF</h1>
 </header>
 
-<audio id="testobject18" src="../assets/testaudio/testobject18.mp3" preload="auto"></audio>
+<audio id="testobject18" src="../assets/testaudio/testobject18.mp3" preload="auto" autoplay></audio>
 
 <script>
 function enableAudioOnce() {
@@ -25,6 +25,27 @@ function enableAudioOnce() {
 
 document.addEventListener("click", enableAudioOnce);
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    if (localStorage.getItem("audioAllowed") === "true") {
+
+        const unlockAudio = () => {
+            document.querySelectorAll("audio").forEach(a => {
+                a.play().catch(()=>{});
+                a.pause();
+                a.currentTime = 0;
+            });
+
+            document.removeEventListener("pointerdown", unlockAudio);
+        };
+
+        document.addEventListener("pointerdown", unlockAudio);
+    }
+});
+</script>
+
 
 <a href="../index.html" class="mini-wizard"></a>
 

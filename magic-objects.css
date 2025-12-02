@@ -20,8 +20,8 @@ body:has(.object3:hover) .object3hover {display:block;}
 .object4hover{position:absolute; top:15% ; left:38% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
 body:has(.object4:hover) .object4hover {display:block;} 
 
-.object5{position:absolute; top:30% ; left:13% ; height: 15%; width: 7.5%; background-image: url(assets/objects/spooky.png); background-size: contain; background-repeat: no-repeat;}
-.object5hover{position:absolute; top:30% ; left:13% ; height: 15%; width: 7.5%; display: none; background-image: url(assets/objects-hover/spooky-copy.png); background-size: contain; background-repeat: no-repeat; transform: scale(1.1); pointer-events: none;}
+.object5{position:absolute; top:28% ; left:13% ; height: 15%; width: 7.5%; background-image: url(assets/objects/spooky.png); background-size: contain; background-repeat: no-repeat;}
+.object5hover{position:absolute; top:28% ; left:12.7% ; height: 15%; width: 8%; display: none; background-image: url(assets/objects-hover/spooky-copy.png); background-size: contain; background-repeat: no-repeat; transform: scale(1.1); pointer-events: none;}
 body:has(.object5:hover) .object5hover {display:block;} 
 
 .object6{position:absolute; top:27% ; left:19% ; height: 21%; width: 10.5%;}
@@ -32,24 +32,24 @@ body:has(.object6:hover) .object6hover {display:block;}
 .object7hover{position:absolute; top:29% ; left:31% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
 body:has(.object7:hover) .object7hover {display:block;} 
 
-.object8{position:absolute; top:33% ; left:39% ; height: 15%; width: 7.5%;}
-.object8hover{position:absolute; top:33% ; left:39% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
-body:has(.object8:hover) .object8hover {display:block;} 
+.object11{position:absolute; top:30% ; left:39% ; height: 15%; width: 7.5%;}
+.object11hover{position:absolute; top:30% ; left:39% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object11:hover) .object11hover {display:block;} 
 
-.object9{position:absolute; top:45% ; left:14% ; height: 15%; width: 7.5%; background-image: url(assets/objects/shapes.png); background-size: contain; background-repeat: no-repeat;}
-.object9hover{position:absolute; top:44.5% ; left:13.5% ; height: 12.5%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+.object9{position:absolute; top:43% ; left:14% ; height: 15%; width: 7.5%; background-image: url(assets/objects/shapes.png); background-size: contain; background-repeat: no-repeat;}
+.object9hover{position:absolute; top:43.3% ; left:14% ; height: 14%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
 body:has(.object9:hover) .object9hover {display:block;} 
 
 .object10{position:absolute; top:44% ; left:22% ; height: 18%; width: 9%;}
 .object10hover{position:absolute; top:44% ; left:22% ; height: 18%; width: 9%; display: none; transform: scale(1.1); pointer-events: none;}
 body:has(.object10:hover) .object10hover {display:block;} 
 
-.object11{position:absolute; top:44% ; left:31% ; height: 15%; width: 7.5%;}
-.object11hover{position:absolute; top:44% ; left:31% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
-body:has(.object11:hover) .object11hover {display:block;} 
+.object8{position:absolute; top:47% ; left:31% ; height: 15%; width: 7.5%;}
+.object8hover{position:absolute; top:47% ; left:31% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+body:has(.object8:hover) .object8hover {display:block;} 
 
-.object12{position:absolute; top:45% ; left:38% ; height: 15%; width: 7.5%; background-image: url(assets/objects/cereal.png); background-size: contain; background-repeat: no-repeat;}
-.object12hover{position:absolute; top:45% ; left:38.5%; height: 12%; width: 6.5%    ; display: none; transform: scale(1.1); pointer-events: none;}
+.object12{position:absolute; top:44% ; left:38% ; height: 15%; width: 7.5%; background-image: url(assets/objects/cereal.png); background-size: contain; background-repeat: no-repeat;}
+.object12hover{position:absolute; top:44.5% ; left:38.25%; height: 13.5%; width: 7%    ; display: none; transform: scale(1.1); pointer-events: none;}
 body:has(.object12:hover) .object12hover {display:block;} 
 
 .object13{position:absolute; top:59% ; left:13% ; height: 15%; width: 7.5%;}
@@ -65,15 +65,15 @@ body:has(.object14:hover) .object14hover {display:block;}
 body:has(.object15:hover) .object15hover {display:block;} 
 
 .object16{position:absolute; top:61% ; left:37% ; height: 15%; width: 7.5%;}
-.object16hover{position:absolute; top:61% ; left:36.5% ; height: 15%; width: 8.5%; display: none; transform: scale(1.1); pointer-events: none;}
+.object16hover{position:absolute; top:60.8% ; left:36.5% ; height: 15%; width: 8.75%; display: none; transform: scale(1.1); pointer-events: none;}
 body:has(.object16:hover) .object16hover {display:block;} 
 
 .object17{position:absolute; top:75% ; left:12% ; height: 15%; width: 7.5%;}
 .object17hover{position:absolute; top:75% ; left:12% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
 body:has(.object17:hover) .object17hover {display:block;} 
 
-.object18{position:absolute; top:76% ; left:22% ; height: 15%; width: 7.5%;  background-image: url(/assets/nodding-smoking-monkey-approves.gif); background-size: contain; background-repeat: no-repeat;}
-.object18hover{position:absolute; top:76%  ; left:22% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+.object18{position:absolute; top:76% ; left:20% ; height: 15%; width: 7.5%;  background-image: url(assets/nodding-smoking-monkey-approves.gif); background-size: contain; background-repeat: no-repeat;}
+.object18hover{position:absolute; top:76%  ; left:20% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
 body:has(.object18:hover) .object18hover {display:block;} 
 
 .object19{position:absolute; top:75% ; left:29% ; height: 15%; width: 7.5%;}
