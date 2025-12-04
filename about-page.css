@@ -4,8 +4,8 @@ body{background-image: url(assets/wizard_background.jpg);  background-size: cove
 .headerfont{font-size: 8vw; color: #d9c96d; font-family: "Pirata One", system-ui; font-weight: 400; font-style: normal; margin:0}
 
 .main{width: 39%; height: 88%; position: absolute; right:3%; top: 6%; background-image: url(assets/scroll.png); background-repeat: no-repeat; background-size:108% 104%; background-position: center;}
-.paragraph{font-family: "Pirata One", system-ui; text-align: center; font-size: 150%; line-height: 162%; padding: 221px 155px 0 146px;}
+.paragraph{font-family: "Pirata One", system-ui; text-align: center; font-size: 150%; line-height: 162%; padding: 19% 16% 0 17%;}
 
 .door{width: 33%; height: 71%; position: absolute; bottom:0%; left:5%}
 
-.torch{width:5%; height: auto; position: absolute; top: 36%; right:50%}
+.torch{width:9%; height: auto; position: absolute; top: 33%; right:46%}
