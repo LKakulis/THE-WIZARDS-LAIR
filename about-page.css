@@ -1,10 +1,14 @@
 body{background-image: url(assets/wizard_background.jpg);  background-size: cover; background-repeat: no-repeat; background-position: center center; background-attachment: fixed;}
 
 .header{position:absolute; left:4%; top: 6%; width: auto; height:32%;}
-.headerfont{font-size: 8vw; color: #d9c96d; font-family: "Pirata One", system-ui; font-weight: 400; font-style: normal; margin:0}
+.headerfont{font-size: 8vw; color: #d9c96d; font-family: "Pirata One", system-ui; font-weight: 400; font-style: normal; margin:0;}
 
-.main{width: 39%; height: 88%; position: absolute; right:3%; top: 6%; background-image: url(assets/scroll.png); background-repeat: no-repeat; background-size:108% 104%; background-position: center;}
-.paragraph{font-family: "Pirata One", system-ui; text-align: center; font-size: 150%; line-height: 162%; padding: 19% 16% 0 17%;}
+main{width: 39%; height: 88%; position: absolute; right:3%; top: 6%; background-image: url(assets/scroll.png); background-repeat: no-repeat; background-size:108% 104%; background-position: center;}
+
+
+.main{position: absolute; width: 43%; max-width: 43%; aspect-ratio: 3/4; margin: 0 auto; background-image: url(assets/scroll.png);background-size: contain; background-repeat: no-repeat; background-position: right;}
+
+.paragraph{position: absolute; top: 19%; left: 30%; right: 15%; bottom: 13%; overflow-y: auto;scrollbar-color: #785b3f transparent; scrollbar-width:thin; font-family: "Pirata One", serif; font-size: 24.5px; text-align: center;}
 
 .door{width: 33%; height: 71%; position: absolute; bottom:0%; left:5%}
 
