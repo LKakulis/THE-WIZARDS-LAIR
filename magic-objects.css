@@ -72,8 +72,8 @@ body:has(.object16:hover) .object16hover {display:block;}
 .object17hover{position:absolute; top:75% ; left:12% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
 body:has(.object17:hover) .object17hover {display:block;} 
 
-.object18{position:absolute; top:76% ; left:20% ; height: 15%; width: 7.5%;  background-image: url(assets/nodding-smoking-monkey-approves.gif); background-size: contain; background-repeat: no-repeat;}
-.object18hover{position:absolute; top:76%  ; left:20% ; height: 15%; width: 7.5%; display: none; transform: scale(1.1); pointer-events: none;}
+.object18{position:absolute; top:78% ; left:21.5% ; height: 9%; width: 8.5%;  background-image: url(assets/objects/cool-rock.png); background-size: contain; background-repeat: no-repeat;}
+.object18hover{position:absolute; top:78%  ; left:21.4% ; height: 9%; width: 5%; display: none; transform: scale(1.1); pointer-events: none;}
 body:has(.object18:hover) .object18hover {display:block;} 
 
 .object19{position:absolute; top:75% ; left:29% ; height: 15%; width: 7.5%;}
