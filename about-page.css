@@ -8,7 +8,7 @@ main{width: 39%; height: 88%; position: absolute; right:3%; top: 6%; background-
 
 .main{position: absolute; width: 43%; max-width: 43%; aspect-ratio: 3/4; margin: 0 auto; background-image: url(assets/scroll.png);background-size: contain; background-repeat: no-repeat; background-position: right;}
 
-.paragraph{position: absolute; top: 19%; left: 30%; right: 15%; bottom: 13%; overflow-y: auto;scrollbar-color: #785b3f transparent; scrollbar-width:thin; font-family: "Pirata One", serif; font-size: 24.5px; text-align: center;}
+.paragraph{position: absolute; top: 19%; left: 30%; right: 15%; bottom: 13%; overflow-y: auto;scrollbar-color: #785b3f transparent; scrollbar-width:thin; font-family: "Pirata One", serif; font-size: 33.5px; text-align: center;}
 
 .door{width: 33%; height: 71%; position: absolute; bottom:0%; left:5%}
 
